@@ -7,20 +7,70 @@
     <title>MTM6130 HTML Assignment</title>
 </head>
 <body>
-    <h1>Ok I see enough! <a href="index.html">take me back!</a></h1>
-    <hr>
-    <H2>These are called gourment!</H2>
-    <ol>
-        <li>curry</li>
-        <li>Ramen</li>
-        <li>kebab</li>
-        <li>Pho</li>
-        <li>goulash</li>
-    </ol>
-    <p>You don't know what is Pho or goulash? why don't you just go <a href="https://www.google.com/" target="_blank">Google </a> it?</p>
-    <h2>Food from my country I miss a lots</h>
-        
-    
-
+    <header>
+        <h2>MTM6130 HTML Assignment</h2>
+        <Nav>Ok I see enough! <a href="index.html">take me back!</a></Nav>
+    </header>
+    <main>
+        <section>
+            <h2>The five html tag:</h2>
+            <dl>
+                <dt>The form tag</dt>
+                <dd>The form tag is the paired tag. There are two important attributes called <strong>action</strong> and <strong>method</strong>. <strong>Action</strong> refers to the form's data where to send the message, and <strong>method</strong> defines how is the information sent. There are two values define the message:<em> get</em> for not sensitive information; <em>post</em> for privacy information.</dd>
+                <dt>The important text tag</dt>
+                <dd>The important text we use <strong>< strong> < /strong> </strong> to emphasize important information in the text.It also a paired tag. </dd>
+                <dt>The Horizontal Line tag</dt>
+                <dd>The horizontal line is a single tag, we use <b>< hr></b> to represent a break in a content</dd>
+                <dt>The blockquote tag</dt>
+                <dd>This tag is a paired tag.Most time used for a quote like a great sentence in novel and a motto from an entrepreneur. We use <b>< blockquote></b>and<b>< /blockquote></b> on html.</dd>
+                <dt>Abbreviation tag</dt>
+                <dd>Abbreviation tag is used for words like "TV","ASAP".It can show the expanded version of definition,like <abbr title="as soon as possible">ASAP</abbr></dd> 
+            </dl>
+        </section>
+        <section>    
+        <h2>These are called delicious food!</h2>
+        <ol>
+            <li>curry</li>
+            <li>Ramen</li>
+            <li>kebab</li>
+            <li>Pho</li>
+            <li>goulash</li>
+        </ol>
+        <nav>You don't know what is Pho or goulash? why don't you just go <a href="https://www.google.com/" target="_blank">Google </a> it?</nav>
+        <h2>Food from my country I miss a lots!</h2>
+        <ul>
+            <li>Pearl Milk tea</li>
+            <li>Braised Pork Rice</li>
+            <li>Beef Noodles</li>
+            <li>Pepper Bun</li>
+        </ul>    
+        </section>
+        <section>
+            <h2>Which one you have eaten before?</h2>
+            <form action="note.html" method="get">
+                <div>
+                    <label for="curry">curry</label>
+                    <input type="checkbox" id="curry">
+                    <label for="Ramen">Ramen</label>
+                    <input type="checkbox" id="Ramen">
+                    <label for="kebab">kebab</label>
+                    <input type="checkbox" id="kebab">
+                    <label for="Pho">Pho</label>
+                    <input type="checkbox" id="Pho">
+                    <label for="goulash">goulash</label>
+                    <input type="checkbox" id="goulash">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Tell me some typical food from Canada!</h2>
+            <form action="notes.html" method="get">
+                <label for="message">Your answer</label>
+                <textarea id="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
