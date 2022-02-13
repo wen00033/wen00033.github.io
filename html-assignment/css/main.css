@@ -1,0 +1,35 @@
+body {
+    font-size: 18px; 
+    font-family: sans-serif;
+    background-color: azure;
+}
+
+header, footer {
+    background-color: rgba(88, 146, 255, 0.712);
+}
+
+.site-title, footer {
+    color:lightblue; 
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black; 
+} 
+
+ul {
+    list-style-type: square;
+}
+
+.hobbies:nth-last-child(odd) {
+    background-color: aquamarine;
+}
+
+a:link {
+    background-color:aqua;
+    text-decoration: none;
+    border-style: solid;
+
+}
+a:hover {
+    background-color: grey;
+}
