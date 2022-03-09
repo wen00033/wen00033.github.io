@@ -7,7 +7,7 @@ body {
 
 /* the position of the heading text */
 .heading {
-    /* Establish the text */
+    /* Establish the text position */
     position: relative;
     text-align: center;
     color: white;
@@ -32,13 +32,20 @@ nav table{
     background-color: azure;
     padding: 15px;
 }
+/* Adding border on second child of border */
+.link:nth-child(2) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
 
 /* Hr the option */
 .link{
     text-transform: uppercase;
+    font-size: larger;
     background-color: azure;
     padding: 15px;
 }
+
 /* change decoration on option */
 .link a {
     color: black;
