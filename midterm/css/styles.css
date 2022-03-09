@@ -20,38 +20,36 @@ body {
     padding: 13%;
 }
 
-/* Full size the Table */
-nav table{
-    width: 100%;
-    border-collapse:collapse;
-    text-align: center;
-}
-
-/* background color on body */
 .wrapper {
     background-color: azure;
     padding: 15px;
+    padding-top: 0%;
 }
-/* Adding border on second child of border */
-.link:nth-child(2) {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-}
-
-/* Hr the option */
-.link{
-    text-transform: uppercase;
-    font-size: larger;
+/* establish navbar and remove padding, margin and style. Align center */
+nav ul {
     background-color: azure;
-    padding: 15px;
+    overflow: auto;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
 }
+/* inlne navigation bar */
+nav ul li {
+    width: 100%;
 
-/* change decoration on option */
-.link a {
+}
+/* adjust nav text,add padding and center navigation */
+nav li a {
+    float: left;
+    padding: 12px;
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: larger;
+    text-align: center;
+    width: 29.58%;
+    
 }
-
 /* set the margin on Life of Starfish */
 div h2{
     margin: 0% auto 5px 10px;
