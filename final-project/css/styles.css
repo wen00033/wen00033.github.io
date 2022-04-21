@@ -1,19 +1,422 @@
+/* adjusting the size on the body, make the size want change agter adding margin and padding, also add the Open sans font to whole text  */
 body {
     box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Realize the text size on should be united, otherwise text would be whole different in the end. Sepereat into h1, h2,h3,h4,p,link and symblo. eliminating margin and add suitable font sizes  */
+h1 {
+    color: white;
+    font-size: 300%;
+    margin: 0%;
+    padding: 20px;
+    padding-bottom: 0%;
+}
+h2 {
+    font-weight: 800;
+    font-size: 200%;
+    padding: 7px;
     margin: 0%;
 }
+h3 {
+    font-size: 150%;
+    padding: 10px;
+    margin: 0%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font: bolder;
+}
+h4 {
+    padding: 7px;
+    margin: 0%;
+}
+p {
+    font-size:x-small;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 0%;
+}
+hr {
+    border-top: 1px solid #c78c06;
+}
+a {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    width: fit-content;
+    height: 30px;
+    text-decoration: none;
+}
+/* -------------------------------------------------------- */
+/* maximum width container 1200px, used max-width for responsive webpage */
+.wrapper {
+    max-width: 1200px;
+    margin: 0%;
+}
+/* remind myself color selected #c78c06 #ffe6ac #222 and white */
 
 /* Mobile: header start mobile with logo at the top left and the nav bar and the search bar at the below. Logo background connect to Home background color   */
 
+header {
+    background-color: #222;
+    border: #222 solid 10px;
+}
+header nav ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color:#c78c06;
+}
+
+header nav ul li:nth-child(1){
+    background-color: #c78c06;
+    color: #222;
+}
+/* use a div on image and add background color */
+#container {
+    background-color: #c78c06;
+}
+
+/* setting input area to width 95% and add padding  */
+#search {
+    display:block ;
+    margin: 0%;
+    padding: 5px;
+    width: 95%;
+}
+/* use position tag on button also styling */
+header button {
+    background-color: #222;
+    color: #c78c06;
+    border: #c78c06 solid 1px;
+    padding: 5px 5px;
+    text-align: center;
+    position: relative;
+    right: -97%;
+    top: -29px;   
+}
+/*setting background and add flex the item. center the greybox */
+
+.background {
+    background-image: url(../images/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+/* flex all item and display in column */
+.greybox {
+    background-color: rgba(2, 2, 2, 0.5);
+    color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    
+}
+/* decorating link and change text color */
+.greybox nav{
+    background-color: #c78c06;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    width: fit-content;
+    height: 30px;
+    text-decoration: none;
+}
+.greybox nav a{ 
+    color: #222;
+    font-size: large;
+} 
+/* image on top and text under image */
+
+.about{
+    background-color: #ffe6ac;
+    padding: 10px;
+}
+.about div img{
+    max-width: 100%;
+    height: auto;
+}
+/* mobile version: five same layout continously. image  cover all on top text in the middle link at the buttom */
+
+.ourservices{
+    background-color: white;
+    padding: 0%;
+    display: flex;
+    flex-wrap:wrap;   
+}
+.digital img,
+.marketing img,
+.video img,
+.web img,
+.print img{
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+
+/* seperate into five part 100/5 */
+.digital,.marketing,.video,
+.web,.print{
+    flex: 20%;
+    margin: 10px;
+    padding-bottom: 10px;
+    background-color: #ffe6ac;
+}
+
+.digital a,.marketing a,.video a,
+.web a,.print a,.vision a{
+    background-color: #222;
+    color: white;
+    display: flex;
+    padding-bottom: 0%;
+}
+/* mobile version:background image with white text in the middle link at the bottom */
+.vision {
+    background-image: url(../images/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 10px;
+}
+.vision div{
+    display: flex;
+    flex-direction: column;
+}
+/* mobile version: white backgroumd, image on the top and text at the bottom */
+.ceo,.cfo{
+    margin: 10px;
+    padding-bottom: 10px;
+    background-color: #ffe6ac;
+    max-width: 1200px;
+}
+/* reverse the display based on the html dsiplay */
+.cfo{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.john,.bob{
+    display: block;
+    width: 100%;
+    height: auto;    
+}
+.ourteam {
+    background-color: white;
+    margin: 10px;
+    width: 100%;
+}
+hr{
+    color:#c78c06;    
+}
+.ourteam div h2{
+    padding-top: 10px;
+}
+/* mobile version: Title on top form & button in the middle and table at the bottom.   */
+.contact {
+    padding: 10px;        
+}
+/* display the input to column */
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+.message h3{
+    padding-left: 0%;
+}
+
+.message input{
+    width: 95%;    
+}
+
+.message textarea {
+    width: 95%;
+    height: 100px;
+}
+.message button {
+    width: fit-content;
+    background-color:#222;
+    color: #c78c06;
+}
+/* styling the table and change height and center text */
+table, th, td {
+    border: 1px solid;
+}
+td,th{
+    height: 40px;
+    vertical-align: middle;
+}
+th{
+    text-align: center;
+}
+table thead {
+    background: #ffe6ac;
+}
+table {
+    border-collapse: collapse;
+    text-decoration: none;
+    width: 100%; 
+}
+
+/* mobile version:location at the bottom change height and width */
+
+.location iframe{
+    width: 100%;
+    min-height: 300px;
+}
+/* -------------------------- */
+footer {
+    padding: 10px;
+    background-color: #222;
+    color: #c78c06;
+}
+
+/* -------------From this line start to style desktop version------------------ */
+
+@media screen and (min-width:760px){    
+   /* Desktop version: add padding or margining to section which are bleeding or not bleeding  */
+    .bleeding{
+        padding-left: 7%;
+        padding-right: 7%; 
+        max-width: 1200px;
+    }
+    .not-bleeding{
+        margin-left: 7%;
+        margin-right: 7%;
+        max-width: 1200px; 
+    }
+/* navbar change direction to row */
+    header div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* desktop image on the left align-item in the middle. space-between elements on navbar   */
+    header {    
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    /* target to div image to change background color */
+    #container {
+        background-color: #222;
+    }
+/* adding white space on ul, which makes li tag won't wrap  */
+    .navbar{
+        white-space: nowrap;
+    }
+
+    header nav li {
+        display: inline-block;    
+    }
+    header button{
+        position: relative;
+        top: 0px;
+        right:10%;
+    }
 
 
+    header nav li a{
+        padding: 10px;
+        margin: 0%;
+    } 
+/* center the greybox */
+    .background{
+        justify-content: center;
+    }
 
+    h1{
+        font-size:400%;
+ 
+    }
+    /* desktop version: float image to left. clearfix on parent. Text and title move to right  */
+    .about{
+        height: fit-content;
+    }
+    .clearfix::after{
+        content: ""; 
+        display: table;
+        clear: both;
+    }
 
-/* Desktop: header start from the left side, display   */
+    .about img{
+        max-width: 30%;
+        max-height: 175px;
+        margin-right: 15px;
+        float: left;
+    }
+/* flex the element on ourservices, and wrap the elements. Digital and marketing take 50% on the row one */
+    .ourservices div{
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .digital,.marketing{
+        flex-basis: calc(50% - 20px);
+    }
+    .digital a,.marketing a,.video a,
+    .web a,.print a{
+        width: 100%;
+        height: 7%;
+        font-size: larger;
+        justify-content: center;
+    }
+    /* our vision stay still */
+    /* Our team use grid on ceo and cfo. John one image on left and Bob one image on right */    
+    .ceo{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         padding-bottom: 0%;
+         margin-bottom: 0%;
+         max-width: 84%;    
+     }
 
+     .cfo{
+         display: grid;
+         grid-template-columns: repeat(2 , 1fr);
+         padding-bottom: 0%;
+         margin-bottom: 0%;
+         margin-top: 0%;
+         max-width: 84%;
+     }
 
-
-/* Mobile:H1 Welcome to Three star Media inside grey box with paragraph and link at the bottom left */
-
-
-/*Mobile:Aboutus photo on top,then h2, paragraph   */
+     /* Using flex to demostrate the layout on Contat Us. Form on the left and location on the right. Table at the bottom so change the order to 1 to move to the last one.
+     h2 also an element put it on the top. Form and Location share equal space in the middle */
+     .contact{
+         padding-left: 0%;
+         padding-right: 0%;
+     }
+     .contact div{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+     .contact div h2{
+         flex-basis: 100%;
+         flex-grow: 1;
+         padding-bottom: 10px;
+     }
+     .table{
+         order: 1;
+         flex-basis: 100%;
+     }
+     .message,.location{
+         flex-basis: calc(50% - 20px);    
+     }  
+/* }     footer stay still */
+}
