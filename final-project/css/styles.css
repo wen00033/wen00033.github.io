@@ -78,6 +78,9 @@ header nav ul li {
     text-decoration: none;
     color:#c78c06;
 }
+.navbar li:nth-child(1) a{
+    color: #222;
+}
 
 header nav ul li:nth-child(1){
     background-color: #c78c06;
@@ -101,10 +104,9 @@ header button {
     color: #c78c06;
     border: #c78c06 solid 1px;
     padding: 5px 5px;
-    text-align: center;
-    position: relative;
-    right: -97%;
-    top: -29px;   
+}
+header form{
+    display: flex;    
 }
 /*setting background and add flex the item. center the greybox */
 
@@ -300,11 +302,14 @@ footer {
         max-width: 1200px; 
     }
 /* navbar change direction to row */
-    header div{
+    header .wrapper{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+    header form{
+        display: flex;    
     }
     /* desktop image on the left align-item in the middle. space-between elements on navbar   */
     header {    
